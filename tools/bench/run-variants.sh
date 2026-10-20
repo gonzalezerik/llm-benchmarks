@@ -30,12 +30,13 @@ MODELS=${MODELS:-/data/models}                            # mounted into the con
 IMG=${IMG:-localhost/maya-cuda:13.4.3}                    # see the hardware page: nvidia/cuda:13.4.3-devel-ubuntu24.04 + python/cmake
 LLAMA_CMD=${LLAMA_CMD:-}                                  # e.g. "llama-server -m ... --port 8005"
 LLAMA_PORT=${LLAMA_PORT:-8005}
+EXTRA_MOUNTS=${EXTRA_MOUNTS:-}                            # more podman -v options, e.g. a tree the checkout symlinks into
 CLIENT=$(dirname "$(readlink -f "$0")")/client.py
 # ----------------------------------------------------------------------------------------------------------------------
 
 mkdir -p "$OUT"
 POD="podman run -d --replace --rm --name bench --dns-search=. --device nvidia.com/gpu=all --ipc host --network host
-     --ulimit memlock=-1:-1 -v $MODELS:$MODELS -v $OUT:$OUT"
+     --ulimit memlock=-1:-1 -v $MODELS:$MODELS -v $OUT:$OUT $EXTRA_MOUNTS"
 gpus_free() { [ "$(nvidia-smi --query-gpu=memory.used --format=csv,noheader,nounits | awk '{s+=$1} END {print s}')" -lt 2000 ]; }
 running() { if [ "$1" = llama ]; then [ -n "${LLAMA_PID:-}" ] && kill -0 "$LLAMA_PID" 2>/dev/null; else podman container exists bench; fi; }
 stop_it() {

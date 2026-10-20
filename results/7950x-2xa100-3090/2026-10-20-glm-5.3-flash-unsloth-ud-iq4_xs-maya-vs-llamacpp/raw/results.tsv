@@ -1,0 +1,6 @@
+glmu_base	maya	 	load 61s	minavail 19720MiB	{"decode": 38.4, "decode_last4": 38.6, "each": [39.3, 38.1, 37.2, 37.8, 37.8, 41.3, 38.1, 37.4], "prefill_32k": 1181, "tokens_32k": 27821, "decode_at_32k": 30.1}
+glmu_aff04	maya	STRATA_GLM_ROUTE_AFFINITY=0.04 	load 61s	minavail 19725MiB	{"decode": 47.2, "decode_last4": 45.6, "each": [51.9, 45.3, 49.2, 48.9, 43.8, 51.7, 44.7, 42.3], "prefill_32k": 1169, "tokens_32k": 27822, "decode_at_32k": 37.0}
+glml_base	maya	 	load 62s	minavail 19702MiB	{"decode": 39.0, "decode_last4": 39.4, "each": [39.1, 38.3, 39.1, 37.9, 38.8, 42.6, 37.1, 38.9], "prefill_32k": 1165, "tokens_32k": 27823, "decode_at_32k": 30.9}
+glml_aff04	maya	STRATA_GLM_ROUTE_AFFINITY=0.04 	load 61s	minavail 19710MiB	{"decode": 47.5, "decode_last4": 45.5, "each": [51.8, 48.2, 49.1, 49.4, 45.0, 51.5, 43.5, 41.8], "prefill_32k": 1155, "tokens_32k": 27822, "decode_at_32k": 37.2}
+glmu_llamacpp	llama	 	load 68s	minavail 83590MiB	{"decode": 6.4, "decode_last4": 6.5, "each": [5.8, 6.4, 6.4, 6.5, 6.5, 6.4, 6.5, 6.7], "prefill_32k": 135, "tokens_32k": 27814, "decode_at_32k": 6.3}
+glmu_llamacpp_nommap	llama	 	load 63s	minavail 24499MiB	{"decode": 6.5, "decode_last4": 6.5, "each": [6.5, 6.4, 6.6, 6.6, 6.4, 6.5, 6.7, 6.6], "prefill_32k": 142, "tokens_32k": 27812, "decode_at_32k": 6.2}

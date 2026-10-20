@@ -7,6 +7,7 @@ A headless home server. Everything on this page applies to every result in this 
 | Date | Model | Engine(s) | Best decode | Page |
 |---|---|---|---|---|
 | 2026-10-20 | GLM-5.3-Flash Maya-L (IQ3_S mix, 156 GB) | Project Maya v1.1.16 / v1.1.17 | 47.7 tok/s | [glm-5.3-flash-maya-l](2026-10-20-glm-5.3-flash-maya-l-maya.md) |
+| 2026-10-20 | GLM-5.3-Flash unsloth UD-IQ4_XS (156.8 GB), vs Maya-L | Project Maya v1.1.17 vs llama.cpp | 47.2 tok/s | [glm-5.3-flash-unsloth-ud-iq4_xs](2026-10-20-glm-5.3-flash-unsloth-ud-iq4_xs-maya-vs-llamacpp.md) |
 | 2026-10-20 | GLM-5.3-Flash Maya-M (IQ2_S mix, 116 GB) | Project Maya v1.1.17 | 62.5 tok/s | [glm-5.3-flash-maya-m](2026-10-20-glm-5.3-flash-maya-m-maya.md) |
 | 2026-10-20 | DeepSeek-V4.1-Flash-1017 Maya-S (178 GB + 203 GB Engram) | Project Maya v1.1.16 / v1.1.17 | 39.8 tok/s | [deepseek-v4.1-flash-maya-s](2026-10-20-deepseek-v4.1-flash-maya-s-maya.md) |
 | 2026-10-20 | Qwen3.8-Flash-Next UD-Q4_K_XL / Q8_0 | Strata v0.2.0-beta vs llama.cpp | 103.0 tok/s | [qwen3.8-flash-next](2026-10-20-qwen3.8-flash-next-strata-vs-llamacpp.md) |
