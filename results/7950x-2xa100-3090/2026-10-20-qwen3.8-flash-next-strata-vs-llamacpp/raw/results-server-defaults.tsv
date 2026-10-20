@@ -1,0 +1,4 @@
+fn_strata_q4	strata	 	load 91s	minavail 73631MiB	{"decode": 107.8, "decode_last4": 97.8, "each": [128.2, 105.6, 110.4, 126.7, 94.2, 115.8, 97.5, 83.8], "prefill_32k": 3101, "tokens_32k": 30488, "decode_at_32k": 104.4}
+fn_strata_q4_spec6	strata	 --spec 6	load 91s	minavail 73604MiB	{"decode": 106.6, "decode_last4": 93.3, "each": [133.2, 93.1, 116.7, 136.3, 85.2, 115.8, 90.6, 81.7], "prefill_32k": 3155, "tokens_32k": 30486, "decode_at_32k": 95.1}
+fn_strata_q4_262k	strata	 --max-context 262144	load 90s	minavail 72519MiB	{"decode": 107.0, "decode_last4": 98.0, "each": [126.6, 96.7, 113.1, 128.1, 93.6, 119.2, 95.5, 83.5], "prefill_32k": 3141, "tokens_32k": 30487, "decode_at_32k": 100.6}
+fn_llamacpp_q4	llama	 	load 32s	minavail 83086MiB	{"decode": 64.7, "decode_last4": 60.5, "each": [69.1, 65.3, 70.2, 70.7, 65.4, 61.7, 57.0, 58.0], "prefill_32k": 1064, "tokens_32k": 30482, "decode_at_32k": 61.8}

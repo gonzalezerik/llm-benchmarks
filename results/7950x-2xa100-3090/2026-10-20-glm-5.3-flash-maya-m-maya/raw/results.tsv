@@ -1,0 +1,3 @@
+glmm_base	maya	 	load 41s	minavail 52128MiB	{"decode": 61.1, "decode_last4": 59.3, "each": [66.5, 61.9, 59.6, 64.0, 62.1, 62.7, 59.7, 52.6], "prefill_32k": 1339, "tokens_32k": 27820, "decode_at_32k": 48.3}
+glmm_aff	maya	STRATA_GLM_ROUTE_AFFINITY=0.02 	load 41s	minavail 52145MiB	{"decode": 61.5, "decode_last4": 59.4, "each": [68.3, 61.7, 58.8, 65.2, 61.8, 64.8, 60.8, 50.2], "prefill_32k": 1332, "tokens_32k": 27824, "decode_at_32k": 50.4}
+glmm_aff04	maya	STRATA_GLM_ROUTE_AFFINITY=0.04 	load 41s	minavail 52126MiB	{"decode": 62.5, "decode_last4": 59.9, "each": [69.7, 63.4, 61.2, 66.0, 62.2, 65.1, 59.3, 53.1], "prefill_32k": 1326, "tokens_32k": 27823, "decode_at_32k": 50.6}

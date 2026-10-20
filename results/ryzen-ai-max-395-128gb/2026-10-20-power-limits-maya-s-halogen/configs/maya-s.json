@@ -1,0 +1,56 @@
+{
+ "exe": "/home/you/.local/share/maya/project-maya/build-hip/strata",
+ "args": [
+  "--glm-pack",
+  "/home/you/models/glm-5.3-flash/maya/Maya-S-v2-IQ2_XXS/pack",
+  "--max-context",
+  "262144",
+  "--expert-cache",
+  "auto",
+  "--prefill",
+  "auto",
+  "--kv-streaming",
+  "on",
+  "--expert-profile",
+  "/home/you/.local/share/maya/project-maya/data/expert-profile-glm.bin"
+ ],
+ "cwd": "/home/you/.local/share/maya/project-maya",
+ "tokenizer": "/home/you/models/glm-5.3-flash/maya/Maya-S-v2-IQ2_XXS/pack/tokenizer",
+ "model_name": "glm-5.3-flash",
+ "gpu": [
+  0
+ ],
+ "sampling": {
+  "temperature": 1.0,
+  "top_p": 0.95
+ },
+ "reasoning_effort": "high",
+ "lib_dirs": [
+  "/opt/rocm/lib"
+ ],
+ "port": 8742,
+ "backend": "hip",
+ "env": {
+  "STRATA_GLM_RESERVE_MB": "1024",
+  "STRATA_GLM_RAM_HEADROOM_GB": "16",
+  "STRATA_GLM_SPLIT": "0",
+  "STRATA_GLM_PREFILL_SUB": "1024",
+  "STRATA_GLM_PREFILL_MB": "6144",
+  "STRATA_HIPBLASLT_TUNING": "/home/you/.local/share/maya/project-maya/tools/hip/gfx1151-glm-hipblaslt-100202.txt:/home/you/.local/share/maya/project-maya/tools/hip/gfx1151-glm-hipblaslt-100401.txt:/home/you/.local/share/maya/project-maya/tools/hip/gfx1151-glm-hipblaslt-100500.txt"
+ },
+ "log": "/home/you/.local/share/maya/project-maya/bench-power.log",
+ "installer": {
+  "models_dir": "/home/you/.local/share/maya/Maya-data/models",
+  "quant": "Maya-S-v2-IQ2_XXS",
+  "gguf": "/home/you/models/glm-5.3-flash/maya/Maya-S-v2-IQ2_XXS/GLM-5.3-Flash-Maya-S-v2-IQ2_XXS-00001-of-00003.gguf",
+  "gguf_dir": "/home/you/models/glm-5.3-flash/maya/Maya-S-v2-IQ2_XXS",
+  "draft": "mtp",
+  "written": "2026-10-19 15:48"
+ },
+ "vision": {
+  "exe": "/home/you/.local/share/maya/project-maya/build-vision-cpu/bin/strata-vision",
+  "mmproj": "/home/you/models/glm-5.3-flash/maya/vision/mmproj-GLM-5.3-Flash-F16.gguf",
+  "model": "/home/you/models/glm-5.3-flash/maya/vision/GLM-5.3-Flash-vocab.gguf",
+  "gpu": false
+ }
+}

@@ -1,0 +1,3 @@
+base2      KL mean 0.0195  median 0.0134  p95 0.0549  top-1 90.6%
+aff02      KL mean 0.0323  median 0.0213  p95 0.1001  top-1 89.8%
+aff04      KL mean 0.0480  median 0.0273  p95 0.1354  top-1 89.5%

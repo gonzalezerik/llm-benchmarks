@@ -6,6 +6,7 @@ The scripts every result in `results/` that links here was measured with.
 |---|---|
 | `client.py` | The measurement: 8 short prompts, then one ~32K-token prompt, against any server that speaks the Anthropic Messages API (`/v1/messages`, streaming). Prints one JSON line. |
 | `run-variants.sh` | Runs a list of engine configurations one after another, each in a fresh engine process, and measures each with `client.py`. |
+| `run-power-limits.sh` | The laptop version: sets the APU's PPT limits (60 / 70 / 85 W, via asusctl) for each run, logs package power, Tctl, GPU clock and GPU busy every second, and adds power stats to each result line. |
 | `kl.py` | Quality check for settings that change a GLM-5.3-Flash model's routing on Project Maya: teacher-forced logits of the same tokens, compared as KL divergence and top-1 agreement. |
 
 ## What client.py measures

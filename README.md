@@ -10,7 +10,7 @@ a model runs on similar hardware, hopefully it helps.
 
 | Device | GPU / APU | Memory | Notes |
 |---|---|---|---|
-| _TBD_ | AMD Strix Halo | _TBD_ | |
+| [ryzen-ai-max-395-128gb](results/ryzen-ai-max-395-128gb/README.md) | AMD Strix Halo: Ryzen AI Max+ 395 / Radeon 8060S | 128 GB LPDDR5X-8000, shared | ASUS ProArt PX13 laptop, on AC at 60 / 70 / 85 W |
 | [7950x-2xa100-3090](results/7950x-2xa100-3090/README.md) | 2x NVIDIA A100 SXM4 40GB + RTX 3090 24GB (104 GB VRAM) | 96 GB DDR5-3600 | Ryzen 9 7950X, PCIe only (no NVLink), NVMe RAID0 |
 
 ## Layout
@@ -39,3 +39,9 @@ Each result should note:
 | Date | Hardware | Model | Engine | Decode | Prefill @ 32K |
 |---|---|---|---|---:|---:|
 | 2026-10-20 | 7950x-2xa100-3090 | [GLM-5.3-Flash Maya-L](results/7950x-2xa100-3090/2026-10-20-glm-5.3-flash-maya-l-maya.md) | Project Maya v1.1.17 | 47.7 tok/s | 1,168 tok/s |
+| 2026-10-20 | 7950x-2xa100-3090 | [GLM-5.3-Flash Maya-M](results/7950x-2xa100-3090/2026-10-20-glm-5.3-flash-maya-m-maya.md) | Project Maya v1.1.17 | 62.5 tok/s | 1,326 tok/s |
+| 2026-10-20 | 7950x-2xa100-3090 | [DeepSeek-V4.1-Flash-1017 Maya-S](results/7950x-2xa100-3090/2026-10-20-deepseek-v4.1-flash-maya-s-maya.md) | Project Maya v1.1.17 | 39.8 tok/s | 421 tok/s |
+| 2026-10-20 | 7950x-2xa100-3090 | [Qwen3.8-Flash-Next UD-Q4_K_XL](results/7950x-2xa100-3090/2026-10-20-qwen3.8-flash-next-strata-vs-llamacpp.md) | Strata v0.2.0-beta | 103.0 tok/s | 3,169 tok/s |
+| 2026-10-20 | 7950x-2xa100-3090 | [Qwen3.8-Flash-Next UD-Q4_K_XL](results/7950x-2xa100-3090/2026-10-20-qwen3.8-flash-next-strata-vs-llamacpp.md) | llama.cpp 5aeac37 | 67.8 tok/s | 1,068 tok/s |
+| 2026-10-20 | ryzen-ai-max-395-128gb | [Qwen3.8-Flash-Next (Halogen v2), 70 W](results/ryzen-ai-max-395-128gb/2026-10-20-power-limits-maya-s-halogen.md) | halogen-flash-server 0.17.5 | 63.6 tok/s | 1,458 tok/s |
+| 2026-10-20 | ryzen-ai-max-395-128gb | [GLM-5.3-Flash Maya-S-v2, 70 W](results/ryzen-ai-max-395-128gb/2026-10-20-power-limits-maya-s-halogen.md) | Project Maya v1.1.15 | 22.9 tok/s | 278 tok/s |

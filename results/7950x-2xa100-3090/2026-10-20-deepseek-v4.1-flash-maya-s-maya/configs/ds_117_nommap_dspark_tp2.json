@@ -1,0 +1,58 @@
+{
+ "exe": "/data/maya/project-maya-117/build/maya-ds4",
+ "args": [
+  "--pack",
+  "/data/models/deepseek-v4.1-flash-1017-maya/Maya-S/maya-ds4",
+  "--max-context",
+  "131072",
+  "--dspark",
+  "on",
+  "--mmap-experts",
+  "off",
+  "--tp",
+  "2"
+ ],
+ "cwd": "/data/maya/project-maya-117",
+ "tokenizer": "/data/models/deepseek-v4.1-flash-1017-maya/Maya-S/maya-ds4/tokenizer",
+ "model_name": "deepseek-v4.1-flash",
+ "gpu": [
+  0,
+  1,
+  2
+ ],
+ "sampling": {
+  "temperature": 1.0,
+  "top_p": 1.0
+ },
+ "reasoning_effort": "high",
+ "lib_dirs": [
+  "/usr/local/cuda-13.4/lib64",
+  "/usr/local/cuda-13.4/targets/x86_64-linux/lib"
+ ],
+ "port": 8088,
+ "log": "/data/maya/ab/bench2/engine-ds_117_nommap_dspark_tp2.log",
+ "installer": {
+  "family": "deepseek",
+  "models_dir": "/data/maya/Maya-data/models",
+  "quant": "DeepSeek-V4.1-Flash-1017",
+  "ds4_quant": "maya-s",
+  "model_dir": "/data/models/deepseek-v4.1-flash-1017-maya/Maya-S",
+  "written": "2026-10-20 03:08",
+  "speed_calibration": {
+   "date": "2026-10-20 03:13",
+   "version": "1.1.16",
+   "dspark_tok_s": 26.16,
+   "no_drafting_tok_s": 26.97,
+   "drafts_accepted": [
+    634,
+    1100
+   ],
+   "tokens": [
+    1152,
+    1152
+   ],
+   "kept": "none"
+  }
+ },
+ "env": {}
+}

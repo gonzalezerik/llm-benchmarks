@@ -1,0 +1,40 @@
+{
+ "exe": "build/strata",
+ "args": [
+  "--pack",
+  "packs/q8_0",
+  "--native",
+  "/data/models/qwen3.8-flash-next/Q8_0/Qwen3.8-Flash-Next-Q8_0-00001-of-00006.gguf",
+  "--resident-budget-gib",
+  "60",
+  "--expert-profile",
+  "data/expert-profile.bin",
+  "--expert-cache",
+  "auto",
+  "--prefill",
+  "auto",
+  "--spec",
+  "4",
+  "--spec-min-p",
+  "0.5",
+  "--mtp",
+  "mtp/rt",
+  "--max-context",
+  "262144",
+  "--kv",
+  "int8"
+ ],
+ "cwd": ".",
+ "tokenizer": "packs/q8_0/tokenizer",
+ "model_name": "qwen3.8-flash-next-q8_0",
+ "host": "127.0.0.1",
+ "port": 8090,
+ "gpu": [
+  0,
+  1,
+  2
+ ],
+ "layer_split": "auto",
+ "log": "/data/maya/ab/bench2/engine-fn_strata_q8_262k_b60_t10.log",
+ "env": {}
+}
