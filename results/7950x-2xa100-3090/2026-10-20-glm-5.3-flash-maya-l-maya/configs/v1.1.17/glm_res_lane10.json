@@ -1,0 +1,62 @@
+{
+ "exe": "/data/maya/project-maya-117/build/maya",
+ "args": [
+  "--glm-pack",
+  "/data/models/glm-5.3-flash-maya/Maya-L/pack",
+  "--max-context",
+  "131072",
+  "--expert-cache",
+  "auto",
+  "--prefill",
+  "auto",
+  "--kv-streaming",
+  "on",
+  "--expert-profile",
+  "/data/maya/project-maya/data/expert-profile-glm.bin",
+  "--vram-reserve-mib",
+  "603",
+  "--vram-reserve-later-mib",
+  "860"
+ ],
+ "cwd": "/data/maya/project-maya-117",
+ "tokenizer": "/data/models/glm-5.3-flash-maya/Maya-L/pack/tokenizer",
+ "model_name": "glm-5.3-flash",
+ "gpu": [
+  0,
+  1,
+  2
+ ],
+ "sampling": {
+  "temperature": 1.0,
+  "top_p": 0.95
+ },
+ "reasoning_effort": "high",
+ "lib_dirs": [
+  "/usr/local/cuda-13.4/lib64",
+  "/usr/local/cuda-13.4/targets/x86_64-linux/lib"
+ ],
+ "port": 8087,
+ "env": {
+  "MAYA_GLM_PCIE_SHARE": "0.00",
+  "MAYA_GLM_KV_INT8": "1",
+  "MAYA_GLM_PREFILL_LAND": "12",
+  "MAYA_GLM_RAM_HEADROOM_GB": "5",
+  "MAYA_GLM_RAM_RESIDENT": "1",
+  "MAYA_GLM_CPU_LANE": "10"
+ },
+ "vision": {
+  "exe": "/data/maya/project-maya/build-vision/bin/maya-vision",
+  "mmproj": "/data/models/glm-5.3-flash-maya/Maya-L/vision/mmproj-GLM-5.3-Flash-F16.gguf",
+  "model": "/data/models/glm-5.3-flash-maya/Maya-L/vision/GLM-5.3-Flash-vocab.gguf",
+  "gpu": true
+ },
+ "log": "/data/maya/ab/bench2/engine-glm_res_lane10.log",
+ "installer": {
+  "models_dir": "/data/maya/Maya-data/models",
+  "quant": "Maya-L",
+  "gguf": "/data/models/glm-5.3-flash-maya/Maya-L/GLM-5.3-Flash-Maya-L-IQ3_S-00001-of-00004.gguf",
+  "gguf_dir": "/data/models/glm-5.3-flash-maya/Maya-L",
+  "draft": "mtp",
+  "written": "2026-10-19 16:37"
+ }
+}

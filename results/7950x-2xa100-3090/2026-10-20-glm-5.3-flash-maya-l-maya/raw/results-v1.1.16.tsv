@@ -1,0 +1,3 @@
+base	 	load 54s	minavail 20819MiB	{"decode": 39.4, "decode_last4": 39.9, "each": [40.8, 39.5, 37.4, 38.0, 39.7, 42.8, 37.7, 39.3], "prefill_32k": 1130, "tokens_32k": 27823, "decode_at_32k": 31.3}
+res	STRATA_GLM_RAM_RESIDENT=1 	load 51s	minavail 12513MiB	{"decode": 39.9, "decode_last4": 40.3, "each": [41.1, 40.4, 38.0, 38.7, 38.3, 41.8, 38.9, 42.2], "prefill_32k": 1133, "tokens_32k": 27819, "decode_at_32k": 32.5}
+res_pm6	STRATA_GLM_RAM_RESIDENT=1 STRATA_GLM_PROMOTE_MIN=6 	load 55s	minavail 12511MiB	{"decode": 38.0, "decode_last4": 38.3, "each": [38.9, 38.3, 36.9, 36.4, 38.2, 40.4, 37.6, 37.0], "prefill_32k": 1114, "tokens_32k": 27821, "decode_at_32k": 30.2}
