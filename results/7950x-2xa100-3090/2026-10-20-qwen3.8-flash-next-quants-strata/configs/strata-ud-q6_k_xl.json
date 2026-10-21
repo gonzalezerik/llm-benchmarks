@@ -1,0 +1,38 @@
+{
+ "exe": "build/strata",
+ "args": [
+  "--pack",
+  "packs/ud-q6_k_xl",
+  "--native",
+  "/data/models/qwen3.8-flash-next/UD-Q6_K_XL/Qwen3.8-Flash-Next-UD-Q6_K_XL-00001-of-00006.gguf",
+  "--resident-budget-gib",
+  "40",
+  "--expert-profile",
+  "data/expert-profile.bin",
+  "--expert-cache",
+  "auto",
+  "--prefill",
+  "auto",
+  "--spec",
+  "4",
+  "--spec-min-p",
+  "0.5",
+  "--mtp",
+  "mtp/rt",
+  "--max-context",
+  "262144",
+  "--kv",
+  "int8"
+ ],
+ "cwd": ".",
+ "tokenizer": "packs/ud-q6_k_xl/tokenizer",
+ "model_name": "qwen3.8-flash-next-ud-q6_k_xl",
+ "host": "127.0.0.1",
+ "port": 8090,
+ "gpu": [
+  0,
+  1,
+  2
+ ],
+ "layer_split": "auto"
+}

@@ -1,0 +1,4 @@
+fn_strata_q6_262k_t10	strata	 	load 101s	minavail 43618MiB	{"decode": 78.3, "decode_last4": 75.8, "each": [82.3, 73.9, 78.0, 89.0, 71.6, 90.9, 76.6, 64.1], "prefill_32k": 3046, "tokens_32k": 30490, "decode_at_32k": 73.8}
+fn_strata_q6_262k_t07	strata	 	load 100s	minavail 43604MiB	{"decode": 77.7, "decode_last4": 73.4, "each": [84.6, 73.7, 78.1, 91.5, 70.4, 86.0, 71.2, 66.1], "prefill_32k": 3041, "tokens_32k": 30489, "decode_at_32k": 75.0}
+fn_strata_q6_262k_b60_t10	strata	 --resident-budget-gib 60	load 101s	minavail 43617MiB	{"decode": 76.1, "decode_last4": 71.8, "each": [82.7, 72.0, 75.9, 91.2, 67.2, 84.5, 72.0, 63.3], "prefill_32k": 3020, "tokens_32k": 30486, "decode_at_32k": 70.0}
+fn_strata_q4_262k_t10	strata	 --max-context 262144	load 81s	minavail 71928MiB	{"decode": 106.4, "decode_last4": 94.7, "each": [128.1, 104.2, 110.3, 129.7, 91.6, 118.1, 88.4, 80.7], "prefill_32k": 3117, "tokens_32k": 30485, "decode_at_32k": 101.9}
